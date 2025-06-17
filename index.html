@@ -9,15 +9,15 @@
   </head>
   <!-- Imagem de fundo -->
   <body
-    class="h-screen p-7 sm:p-14 text-white list-none bg-[url(/img/Background-img.png)] sm:bg-[url(/img/sm/Background-img-sm.png)] lg:bg-[url(/img/lg/Background-img-lg.png)]"
+    class="h-screen p-7 sm:p-14 text-white list-none bg-[url(/img/Background-img.png)] sm:bg-[url(/img/sm/Background-img-sm.png)] lg:bg-[url(/img/lg/Background-img-lg.png)] bg-cover"
   >
     <!-- Fundo Borrado -->
     <div
-      class="p-8 border sm:pl-12 sm:pt-12 sm:pr-0 sm:pb-0 rounded-[2.5rem] w-full h-full bg-white/20 backdrop-blur-lg"
+      class="p-8 border sm:pl-12 sm:pt-12 sm:pr-0 sm:pb-0 lg:pl-28 rounded-[2.5rem] w-full h-full bg-white/20 backdrop-blur-lg"
     >
       <!-- Cabeçalho -->
       <header
-        class="flex flex-wrap lg:flex-nowrap text-sm sm:text-3xl justify-between gap-y-10 sm:justify-around sm:gap-y-24 lg:items-center"
+        class="flex flex-wrap text-sm sm:text-3xl justify-between gap-y-10 sm:justify-around sm:gap-y-24 lg:items-center lg:justify-between lg:flex-nowrap lg:pr-28"
       >
         <ul
           class="w-full lg:w-[60%] flex gap-2 sm:pl-28 sm:pr-28 sm:gap-8 justify-between lg:order-2 lg:justify-center"
@@ -49,16 +49,18 @@
 
       <!-- Conteudo Principal -->
       <main
-        class="flex flex-row flex-wrap w-full items-center gap-y-10 pt-12 sm:gap-14 sm:gap-y-10"
+        class="flex flex-row flex-wrap w-full items-center gap-y-10 pt-12 sm:gap-14 sm:gap-y-10 lg:flex-col lg:items-start lg:gap-20 lg:h-[85%] lg:gap-x-0 lg:pt-24"
       >
         <div>
-          <h2 class="text-4xl sm:text-8xl">Look Deep Into Nature</h2>
+          <h2 class="text-4xl sm:text-8xl">
+            Look Deep Into<br />
+            Nature
+          </h2>
         </div>
         <div>
           <p class="text-sm sm:text-2xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed
-            do eiusmod tempor incididunt ut labore et dolore<br />
-            magna aliqua.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod <br />tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
         <div>
@@ -86,7 +88,7 @@
       </main>
 
       <!-- Rodapé -->
-      <footer class="sm:pr-20">
+      <footer class="sm:pr-20 lg:justify-start lg:flex">
         <ul
           class="flex justify-between pt-6 text-sm sm:text-3xl sm:gap-10 sm:justify-center sm:pt-0"
         >
