@@ -13,7 +13,7 @@
   >
     <!-- Fundo Borrado -->
     <div
-      class="p-8 border sm:p-12 sm:pl-12 sm:pr-12 rounded-[2.5rem] w-full h-full bg-white/20 backdrop-blur-lg"
+      class="p-8 border sm:pl-12 sm:pt-12 sm:pr-0 sm:pb-0 rounded-[2.5rem] w-full h-full bg-white/20 backdrop-blur-lg"
     >
       <!-- Cabeçalho -->
       <header
@@ -48,27 +48,48 @@
       </header>
 
       <!-- Conteudo Principal -->
-      <main class="flex flex-col w-full items-center gap-y-10 pt-12">
+      <main
+        class="flex flex-row flex-wrap w-full items-center gap-y-10 pt-12 sm:gap-14 sm:gap-y-10"
+      >
         <div>
-          <h2 class="text-4xl">Look Deep Into Nature</h2>
+          <h2 class="text-4xl sm:text-8xl">Look Deep Into Nature</h2>
         </div>
         <div>
-          <p class="text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <p class="text-sm sm:text-2xl">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed
+            do eiusmod tempor incididunt ut labore et dolore<br />
+            magna aliqua.
           </p>
         </div>
         <div>
-          <button class="w-52 h-16 text-3xl bg-white/30 rounded-lg">
+          <button
+            class="w-52 h-16 sm:w-64 sm:h-20 text-3xl bg-white/30 rounded-lg"
+          >
             Book Now
           </button>
         </div>
-        <img src="./img/Drawing-img.png" alt="Desenho de arvores" />
+
+        <picture>
+          <!-- Imagem para telas grandes (≥ 1024px) -->
+          <source
+            srcset="./img/lg/Drawing-img-lg.png"
+            media="(min-width: 1024px)"
+          />
+          <!-- Imagem para telas grandes (≥ 768px) -->
+          <source
+            srcset="./img/sm/Drawing-img-sm.png"
+            media="(min-width: 768px)"
+          />
+          <!-- Imagem padrão (mobile ou fallback) -->
+          <img src="./img/Drawing-img.png" alt="Desenho de árvores" />
+        </picture>
       </main>
 
       <!-- Rodapé -->
-      <footer class="w-full">
-        <ul class="flex justify-between pt-6 text-sm">
+      <footer class="sm:pr-20">
+        <ul
+          class="flex justify-between pt-6 text-sm sm:text-3xl sm:gap-10 sm:justify-center sm:pt-0"
+        >
           <li><a href="#"></a>Instagram</li>
           <li><a href="#"></a>Facebook</li>
           <li><a href="#"></a>Youtube</li>
